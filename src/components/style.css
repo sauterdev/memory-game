@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+
+.total-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hideNumDiv {
+    height: 50px;
+}
+
+#timedDisplay {
+    margin: 0;
+}
