@@ -1,24 +1,20 @@
 import { useState, useEffect } from 'react';
-import LevelScoreStreak from "./components/levelScoreStreak"
+// import LevelScoreStreak from "./components/levelScoreStreak"
+// import NumAndInput from './components/numAndInput';
+import HeaderComp from "./components/headerComp"
 import './App.css';
 
 import RandNumAndPlayInput from './components/randNumAndPlayInput';
 
-function App(props) {
+export default function App() {
+ 
   return (
-    
-      <div className="total-content">
-        <hr></hr>
-        <h1>Speed Memory</h1>
-        <h2>Type the numeric code you see appear on the screen</h2>
-        <h3>The longer you go, the harder it gets</h3>
-        <h3>Good Luck!</h3>
-        <hr></hr>
-      {/* <LevelScoreStreak /> */}
+       <div className="total-content">
+         <hr></hr>
+          <HeaderComp />
+         <hr></hr>
       <RandNumAndPlayInput />
       </div>
     
   );
 }
-
-export default App;
